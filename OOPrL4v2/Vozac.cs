@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace OOPrL4v2
 {
@@ -60,6 +61,10 @@ namespace OOPrL4v2
             pol = 'n';
             kategorije = new List<Kategorije>(20);
             zabranjeneKategorije = new List<Kategorije>(20);
+        }
+        public void prikaz()
+        {
+            MessageBox.Show(Ime);
         }
 
         #region Kategorije - Operacije
